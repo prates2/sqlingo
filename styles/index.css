@@ -1,0 +1,24 @@
+#menuLateral{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 16rem;
+    height: 100%;
+    background-color: #a5a5a5;
+    list-style-type: none;
+    text-align: center;
+}
+#menuLateral ul{
+    list-style-type: none;
+}
+
+#logo{
+    width: 80%;
+}
+#caminhoPrincipal{
+    width: 50%;            
+    margin: 0 auto;      
+    background-color: #a5a5a5;
+    border-radius: 1rem;
+    text-align: center;  
+}
