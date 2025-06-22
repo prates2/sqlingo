@@ -17,7 +17,7 @@ item2.appendChild(comandos);
 //caminho principal
 const section = document.getElementById("caminhoPrincipal");
 const titulo = document.createElement("h1");
-titulo.innerText = "Introdução";
+titulo.innerText = "1- Introdução";
 const atividadeButton = document.createElement("button");
 atividadeButton.innerText = "1";
 const atividadeButton2 = document.createElement("button");

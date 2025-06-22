@@ -4,7 +4,7 @@
     right: 0;
     width: 16rem;
     height: 100%;
-    background-color: #a5a5a5;
+    background-color: #cecece;
     list-style-type: none;
     text-align: center;
 }
@@ -13,12 +13,43 @@
 }
 
 #logo{
+    margin-top: 1rem;
     width: 80%;
 }
+#menuLateral button{
+    width: 10rem;
+    height: 8rem;
+    border-radius: 25%;
+    margin-top: 1rem;
+}
+
+
+button{
+    background-color: #00b7ff;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+button:hover{
+    background-color: #004fa8;
+}
+
 #caminhoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;            
     margin: 0 auto;      
-    background-color: #a5a5a5;
+    background-color: #cecece;
     border-radius: 1rem;
     text-align: center;  
+}
+#caminhoPrincipal button{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-top: 4rem;
 }
