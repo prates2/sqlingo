@@ -50,7 +50,7 @@ button:hover{
 
 #caminhoPrincipal{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 50%;            
     margin: 0 auto;      
@@ -59,8 +59,8 @@ button:hover{
     text-align: center;  
 }
 #caminhoPrincipal button{
-    width: 8rem;
+    width: 16rem;
     height: 8rem;
-    border-radius: 50%;
+    border-radius: 20%;
     margin-top: 4rem;
 }

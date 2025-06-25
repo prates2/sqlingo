@@ -14,12 +14,12 @@ menuLateral.prepend(logo);
 const home = document.createElement("button")
 const comandos = document.createElement("button")
 comandos.addEventListener("click", function () {
-    window.location.href = "./pages/page2.html";
+    window.location.href = "../pages/page2.html";
+});
+home.addEventListener("click", function () {
+    window.location.href = "../index.html";
 });
 home.innerText = "Início";
-home.addEventListener("click", function () {
-    window.location.href = "./index.html";
-});
 comandos.innerText = "Comandos";
 menuLateral.append(home, comandos);
 
@@ -31,9 +31,11 @@ body.appendChild(div)
 div.appendChild(section)
 //const section = document.getElementById("caminhoPrincipal");
 const titulo = document.createElement("h1");
-titulo.innerText = "1- Introdução";
-const atividadeButton = document.createElement("button");
-atividadeButton.innerText = "1";
-const atividadeButton2 = document.createElement("button");
-atividadeButton2.innerText = "2";
-section.append(titulo, atividadeButton, atividadeButton2);
+titulo.innerText = "Comandos";
+const comando1 = document.createElement("button");
+const comando2 = document.createElement("button");
+const comando3 = document.createElement("button");
+comando1.innerText = "select";
+comando2.innerText = "insert";
+comando3.innerText = "seila";
+section.append(titulo, comando1, comando2, comando3);
