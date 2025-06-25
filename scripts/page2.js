@@ -1,15 +1,12 @@
 const body = document.querySelector("body");
 
 //menu lateral
-//const menuLateral = document.getElementById("menuLateral");
-const menuLateral = document.createElement("nav");
-menuLateral.id = "menuLateral"
-body.appendChild(menuLateral)
+const menuLateral = document.getElementById("menuLateral");
 
 const logo = document.createElement("img");
-logo.src = "./imagens/logo.png";
+logo.src = "../imagens/logo.png";
 logo.id = "logo";
-menuLateral.prepend(logo);
+menuLateral.appendChild(logo);
 
 const home = document.createElement("button")
 const comandos = document.createElement("button")
@@ -23,19 +20,32 @@ home.innerText = "Início";
 comandos.innerText = "Comandos";
 menuLateral.append(home, comandos);
 
-//caminho principal
-const div = document.createElement("div");
-const section = document.createElement("section");
-section.id = "caminhoPrincipal";
-body.appendChild(div)
-div.appendChild(section)
-//const section = document.getElementById("caminhoPrincipal");
+//menuprincipal
+const section = document.getElementById("comandos");
 const titulo = document.createElement("h1");
-titulo.innerText = "Comandos";
-const comando1 = document.createElement("button");
-const comando2 = document.createElement("button");
-const comando3 = document.createElement("button");
-comando1.innerText = "select";
-comando2.innerText = "insert";
-comando3.innerText = "seila";
-section.append(titulo, comando1, comando2, comando3);
+titulo.innerText = "Comandos de Manipulação de Dados";
+section.appendChild(titulo)
+let botoes1 = ["SELECT", "INSERT", "UPDATE"];
+let botoes2 = ["ALTER", "CREATE", "DROP"];
+
+function criarLinhaBotoes(listaDeComandos) {
+  const ul = document.createElement("ul");
+  for (let i = 0; i < listaDeComandos.length; i++) {
+    let li = document.createElement("li");
+    let botao = document.createElement("button");
+    botao.innerText = listaDeComandos[i];
+    li.appendChild(botao);
+    ul.appendChild(li);
+  }
+  return ul;
+}
+
+const linha1 = criarLinhaBotoes(botoes1);
+section.appendChild(linha1);
+
+const titulo2 = document.createElement("h1");
+titulo2.innerText = "Comandos de Definição de Dados";
+section.appendChild(titulo2);
+
+const linha2 = criarLinhaBotoes(botoes2);
+section.appendChild(linha2);

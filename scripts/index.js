@@ -1,15 +1,12 @@
 const body = document.querySelector("body");
 
 //menu lateral
-//const menuLateral = document.getElementById("menuLateral");
-const menuLateral = document.createElement("nav");
-menuLateral.id = "menuLateral"
-body.appendChild(menuLateral)
+const menuLateral = document.getElementById("menuLateral");
 
 const logo = document.createElement("img");
 logo.src = "./imagens/logo.png";
 logo.id = "logo";
-menuLateral.prepend(logo);
+menuLateral.appendChild(logo);
 
 const home = document.createElement("button")
 const comandos = document.createElement("button")
@@ -24,12 +21,8 @@ comandos.innerText = "Comandos";
 menuLateral.append(home, comandos);
 
 //caminho principal
-const div = document.createElement("div");
-const section = document.createElement("section");
-section.id = "caminhoPrincipal";
-body.appendChild(div)
-div.appendChild(section)
-//const section = document.getElementById("caminhoPrincipal");
+const section = document.getElementById("caminhoPrincipal");
+
 const titulo = document.createElement("h1");
 titulo.innerText = "1- Introdução";
 const atividadeButton = document.createElement("button");

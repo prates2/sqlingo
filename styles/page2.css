@@ -32,7 +32,7 @@ h1{
     width: 96.5%;
     padding: 1rem;
     margin: 0;
-    border-radius: 1rem 1rem;
+    border-radius: 1rem;
 }
 
 button{
@@ -48,19 +48,26 @@ button:hover{
     background-color: #004fa8;
 }
 
-#caminhoPrincipal{
+#comandos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 50%;            
     margin: 0 auto;      
     background-color: #e0e0e0;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
     text-align: center;  
+    margin-top: 1rem;
 }
-#caminhoPrincipal button{
-    width: 16rem;
+#comandos button{
+    width: 12rem;
     height: 8rem;
     border-radius: 20%;
-    margin-top: 4rem;
+    margin: 4rem;
+}
+
+#comandos ul {
+  list-style: none;
+  display: flex;
 }
