@@ -38,10 +38,14 @@ dicaImagem.src = "../imagens/dica.png";
 pergunta.appendChild(dicaBotao)
 dicaBotao.id = "dicaBotao";
 
+let usoDica = false
 dicaBotao.addEventListener("click", () => {
-  const botoes = section.querySelectorAll("ul button");
-  botoes[1].remove();
-  botoes[3].remove();
+  if (usoDica == false){
+    const botoes = section.querySelectorAll("ul button");
+    botoes[1].remove();
+    botoes[3].remove();
+    usoDica = true
+  }
 });
 
 //alternativas em lista
