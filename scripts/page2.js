@@ -4,7 +4,7 @@ const body = document.querySelector("body");
 const menuLateral = document.getElementById("menuLateral");
 
 const logo = document.createElement("img");
-logo.src = "../imagens/logo.png";
+logo.src = "../imagens/logoSQLingo2.png";
 logo.id = "logo";
 menuLateral.appendChild(logo);
 

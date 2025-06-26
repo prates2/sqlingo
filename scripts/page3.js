@@ -6,7 +6,7 @@ const containerPrincipal = document.getElementById("containerPrincipal");
 const menuLateral = document.getElementById("menuLateral");
 
 const logo = document.createElement("img");
-logo.src = "../imagens/logo.png";
+logo.src = "../imagens/logoSQLingo2.png";
 logo.id = "logo";
 menuLateral.appendChild(logo);
 
@@ -23,7 +23,7 @@ comandos.innerText = "Comandos";
 menuLateral.append(home, comandos);
 
 //menuprincipal
-const section = document.getElementById("comandos");
+const section = document.getElementById("menuPrincipal");
 const titulo = document.createElement("h1");  
 titulo.innerText = "Selecione a alternativa correta";
 const pergunta = document.createElement("h2");

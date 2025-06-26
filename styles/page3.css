@@ -1,4 +1,4 @@
-:root {
+:root{
   --corFundoDestaque: #e0e0e0;
   --corPrimaria: #00b7ff;
   --corHover: #004fa8;
@@ -12,7 +12,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 16rem;
+    width: 15%;
     height: 100%;
     background-color: var(--corFundoDestaque);
     list-style-type: none;
@@ -28,8 +28,8 @@
     margin-bottom: 1rem;
 }
 #menuLateral button{
-    width: 10rem;
-    height: 8rem;
+    width: 60%;
+    height: 13%;
     border-radius: 25%;
     margin-top: 1rem;
 }
@@ -44,18 +44,18 @@ h1{
 
 button{
     background-color: var(--corPrimaria);
-    color: var(--corTexto);
+    color: var(--corTexto); 
     border: none;
-    font-size: 1.5rem;
+    font-size: 150%;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
     
 }
 button:hover{
     background-color: var(--corHover);
 }
 
-#comandos{
+#menuPrincipal{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,7 +69,7 @@ button:hover{
     margin-top: 1rem;
 }
 
-#comandos button:not(#dicaBotao){
+#menuPrincipal button:not(#dicaBotao){
     width: 7rem;
     height: 5rem;
     border-radius: 20%;
@@ -79,12 +79,12 @@ button:hover{
     border: 0.2rem solid var(--corPrimaria);
 }
 
-#comandos button:not(#dicaBotao):hover{
+#menuPrincipal button:not(#dicaBotao):hover{
     background-color: var(--corPrimaria);
     color: var(--corTexto);
 }
 
-#comandos ul {
+#menuPrincipal ul{
   list-style: none;
   display: flex;
 }
@@ -99,8 +99,7 @@ h2{
 
 }
 
-#dicaBotao {
-    
+#dicaBotao{
     border: none;
     background: transparent;
     padding: 0;
@@ -108,7 +107,7 @@ h2{
     cursor: pointer;
     box-shadow: none
 }
-#dicaBotao:hover {
+#dicaBotao:hover{
     background-color: transparent;
     border: 0.2rem solid var(--corPrimaria);;
     border-radius: 10%;
@@ -131,4 +130,115 @@ h2{
 
 #verificarBotao:hover{
   background-color: var(--corHover);
+}
+
+
+/*Responsividade*/
+
+@media (max-width: 1024px){
+  #menuLateral {
+    width: 20%;
+  }
+
+  #containerPrincipal{
+    margin-left: 10%;
+    width: 100%;
+  }
+
+  #menuLateral button{
+    font-size: 1rem;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  #menuPrincipal button:not(#dicaBotao){
+    width: 5rem;
+    height: 4rem;
+    margin: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menuLateral{
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+
+  #containerPrincipal{
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  #menuLateral button{
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  #logo{
+    width: 15%;
+    margin: 0;
+  }
+
+  #menuPrincipal{
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  #menuPrincipal button:not(#dicaBotao){
+    width: 5rem;
+    height: 4rem;
+    margin: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  h1, h2{
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1{
+    font-size: 1.2rem;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  button{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  #logo{
+    width: 25%;
+  }
+
+  #menuPrincipal{
+    width: 100%;
+  }
+
+  #menuPrincipal button:not(#dicaBotao){
+    width: 4.5rem;
+    height: 3rem;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+  }
+
+  #verificarBotao{
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  #dicaBotao img{
+    width: 2rem;
+  }
 }
