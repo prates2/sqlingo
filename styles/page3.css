@@ -58,6 +58,7 @@ button:hover{
 #comandos{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     justify-content: center;
     align-items: center;
     width: 50%;            
@@ -67,14 +68,67 @@ button:hover{
     text-align: center;  
     margin-top: 1rem;
 }
-#comandos button{
-    width: 12rem;
-    height: 8rem;
+
+#comandos button:not(#dicaBotao){
+    width: 7rem;
+    height: 5rem;
     border-radius: 20%;
-    margin: 4rem;
+    margin: 2rem;
+    background-color: var(--corTexto);
+    color: var(--corPrimaria);
+    border: 0.2rem solid var(--corPrimaria);
+}
+
+#comandos button:not(#dicaBotao):hover{
+    background-color: var(--corPrimaria);
+    color: var(--corTexto);
 }
 
 #comandos ul {
   list-style: none;
   display: flex;
+}
+
+h2{
+    margin-top: 3rem;
+}
+
+#dicaBotao img{
+    width: 3rem;
+    height: auto;
+
+}
+
+#dicaBotao {
+    
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-left: 2rem;
+    cursor: pointer;
+    box-shadow: none
+}
+#dicaBotao:hover {
+    background-color: transparent;
+    border: 0.2rem solid var(--corPrimaria);;
+    border-radius: 10%;
+    
+}
+
+#containerPrincipal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#verificarBotao{
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--corPrimaria);
+  color: var(--corTexto);
+  border-radius: 0.5rem;
+}
+
+#verificarBotao:hover{
+  background-color: var(--corHover);
 }

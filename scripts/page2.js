@@ -25,6 +25,7 @@ const section = document.getElementById("comandos");
 const titulo = document.createElement("h1");
 titulo.innerText = "Comandos de Manipulação de Dados";
 section.appendChild(titulo)
+
 let botoes1 = ["SELECT", "INSERT", "UPDATE"];
 let botoes2 = ["ALTER", "CREATE", "DROP"];
 

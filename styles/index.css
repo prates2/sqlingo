@@ -1,3 +1,10 @@
+:root {
+  --corFundoDestaque: #e0e0e0;
+  --corPrimaria: #00b7ff;
+  --corHover: #004fa8;
+  --corTexto: white;
+}
+
 #menuLateral{
     display: flex;
     flex-direction: column;
@@ -7,7 +14,7 @@
     left: 0;
     width: 16rem;
     height: 100%;
-    background-color: #e0e0e0;
+    background-color: var(--corFundoDestaque);
     list-style-type: none;
     text-align: center;
 }
@@ -27,8 +34,8 @@
     margin-top: 1rem;
 }
 h1{
-    background-color: #00b7ff;
-    color: white;
+    background-color: var(--corPrimaria);
+    color: var(--corTexto); 
     width: 96.5%;
     padding: 1rem;
     margin: 0;
@@ -36,8 +43,8 @@ h1{
 }
 
 button{
-    background-color: #00b7ff;
-    color: white;
+    background-color: var(--corPrimaria);
+    color: var(--corTexto); 
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
@@ -45,7 +52,7 @@ button{
     
 }
 button:hover{
-    background-color: #004fa8;
+    background-color: var(--corHover);
 }
 
 #caminhoPrincipal{
@@ -54,7 +61,7 @@ button:hover{
     align-items: center;
     width: 50%;            
     margin: 0 auto;      
-    background-color: #e0e0e0;
+    background-color: var(--corFundoDestaque);
     border-radius: 1rem;
     text-align: center;  
 }
@@ -63,4 +70,5 @@ button:hover{
     height: 8rem;
     border-radius: 50%;
     margin-top: 4rem;
+    margin-bottom: 4rem;
 }

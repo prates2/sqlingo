@@ -27,6 +27,9 @@ const titulo = document.createElement("h1");
 titulo.innerText = "1- Introdução";
 const atividadeButton = document.createElement("button");
 atividadeButton.innerText = "1";
+atividadeButton.addEventListener("click", function () {
+    window.location.href = "./pages/page3.html";
+});
 const atividadeButton2 = document.createElement("button");
 atividadeButton2.innerText = "2";
 section.append(titulo, atividadeButton, atividadeButton2);
