@@ -32,4 +32,7 @@ atividadeButton.addEventListener("click", function () {
 });
 const atividadeButton2 = document.createElement("button");
 atividadeButton2.innerText = "2";
+atividadeButton2.addEventListener("click", function () {
+    window.location.href = "./pages/page3.html";
+});
 section.append(titulo, atividadeButton, atividadeButton2);
