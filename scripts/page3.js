@@ -40,7 +40,7 @@ dicaBotao.id = "dicaBotao";
 
 dicaBotao.addEventListener("click", () => {
   const botoes = section.querySelectorAll("ul button");
-  botoes[2].remove();
+  botoes[1].remove();
   botoes[3].remove();
 });
 
