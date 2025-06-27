@@ -22,9 +22,6 @@ menuLateral.append(home, comandos);
 
 //menuprincipal
 const section = document.getElementById("comandos");
-const titulo = document.createElement("h1");
-titulo.innerText = "Comandos de Manipulação de Dados";
-section.appendChild(titulo)
 
 let botoes1 = ["SELECT", "INSERT", "UPDATE"];
 let botoes2 = ["ALTER", "CREATE", "DROP"];
@@ -41,12 +38,12 @@ function criarLinhaBotoes(listaDeComandos) {
   return ul;
 }
 
-const linha1 = criarLinhaBotoes(botoes1);
-section.appendChild(linha1);
+function criarSecaoComandos(tituloTexto, listaDeComandos) {
+  const titulo = document.createElement("h1");
+  titulo.innerText = tituloTexto;
+  const linha = criarLinhaBotoes(listaDeComandos);
+  section.append(titulo, linha);
+}
 
-const titulo2 = document.createElement("h1");
-titulo2.innerText = "Comandos de Definição de Dados";
-section.appendChild(titulo2);
-
-const linha2 = criarLinhaBotoes(botoes2);
-section.appendChild(linha2);
+criarSecaoComandos("Comandos de Manipulação de Dados", botoes1);
+criarSecaoComandos("Comandos de Definição de Dados", botoes2);
