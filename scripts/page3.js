@@ -42,6 +42,7 @@ const botoesRemover = {
   "INSERT": true,
   "SELECT": true
 };
+let usoDica = false
 dicaBotao.addEventListener("click", () => {
   const botoes = section.querySelectorAll("ul button");
   for (let i = 0; i < botoes.length; i++) {
@@ -49,6 +50,7 @@ dicaBotao.addEventListener("click", () => {
       botoes[i].remove();
     }
   }
+  usoDica = true
 });
 
 //alternativas em lista
@@ -112,10 +114,7 @@ verificarBotao.addEventListener("click", () => {
   }
   
   for (let i = 0; i < botoes.length; i++) {
-        botoes[i].classList.remove("buttonselecionado");
-  }
-  for (let i = 0; i < botoes.length; i++) {
+    botoes[i].classList.remove("buttonselecionado");
     botoes[i].disabled = true;
   }
-  
 });
