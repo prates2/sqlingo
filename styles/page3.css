@@ -51,13 +51,14 @@ button{
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
     
 }
-.buttonselecionado {
-  background-color: var(--corHover) !important; 
-  color: var(--corTexto) !important;
-}
 
 button:hover{
     background-color: var(--corHover);
+}
+
+#menuPrincipal li button.buttonselecionado {
+  background-color: var(--corHover);
+  color: var(--corTexto);
 }
 
 #menuPrincipal{
@@ -74,7 +75,7 @@ button:hover{
     margin-top: 1rem;
 }
 
-#menuPrincipal button:not(#dicaBotao){
+#menuPrincipal li button{
     width: 7rem;
     height: 5rem;
     border-radius: 20%;
@@ -84,7 +85,7 @@ button:hover{
     border: 0.2rem solid var(--corPrimaria);
 }
 
-#menuPrincipal button:not(#dicaBotao):hover{
+#menuPrincipal li button:hover{
     background-color: var(--corPrimaria);
     color: var(--corTexto);
 }
@@ -112,11 +113,17 @@ h2{
     cursor: pointer;
     box-shadow: none
 }
+
 #dicaBotao:hover{
     background-color: transparent;
     border: 0.2rem solid var(--corPrimaria);;
     border-radius: 10%;
     
+}
+
+#dicaBotao.botaoDicaDisable:hover{
+  border: none;
+  cursor: default;
 }
 
 #containerPrincipal{

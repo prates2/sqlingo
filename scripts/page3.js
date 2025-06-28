@@ -50,6 +50,8 @@ dicaBotao.addEventListener("click", () => {
       botoes[i].remove();
     }
   }
+  dicaImagem.src = "../imagens/dicaDisableTransparente.png";
+  dicaBotao.classList.add("botaoDicaDisable");
   usoDica = true
 });
 
@@ -85,7 +87,7 @@ const linha1 = criarLinha(alternativas);
 section.appendChild(linha1);
 
 
-
+//botão verificar
 const verificarBotao = document.createElement("button")
 verificarBotao.innerText = "Verificar";
 verificarBotao.id = "verificarBotao";
@@ -100,6 +102,10 @@ verificarBotao.addEventListener("click", () => {
   if (respostaUsuario === respostaCorreta) {
     botaoSelecionado.style.backgroundColor = "green";
     botaoSelecionado.style.color = "white";
+    if (usoDica == false){
+      dicaImagem.src = "../imagens/dicaDisableTransparente.png";
+      dicaBotao.classList.add("botaoDicaDisable");
+    }
   } 
   
   else {
@@ -110,6 +116,10 @@ verificarBotao.addEventListener("click", () => {
         botoes[i].style.backgroundColor = "green";
         botoes[i].style.color = "white";
       }
+    }
+    if (usoDica == false){
+      dicaImagem.src = "../imagens/dicaDisableTransparente.png";
+      dicaBotao.classList.add("botaoDicaDisable");
     }
   }
   
